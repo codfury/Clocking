@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/resp.css">
+    
     <title>Clock</title>
 </head>
 
@@ -19,8 +20,8 @@
             <li><a href="#sw">Stopwatch</a></li>
             <li><a href="#cl">The Clockoculate</a></li>
         </ul>
-        
-         <div class="burger">
+       
+         <div class="burger" id="burger">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
@@ -31,7 +32,7 @@
         <div class="box-main" >
             <div class="firstHalf" id="clock">
                 
-                
+               
             </div>
 
             
@@ -39,40 +40,46 @@
     </section>
 
     
-
+    <script src="scripts/resp.js"></script>
+    
     <section class="background" id="cd">
-        <h1 class="text-center">Countdowns</h1>
-        <div class="box-main ">
+        <h1 class="text-center">Countdown</h1>
+        <div class="firstSection box-main ">
+
         <div id="container">
             <p id="hour-label" class="label">Hours</p><p id="min-label" class="label">Minutes</p><p id="sec-label" class="label">Seconds</p>
-            <input id="hour" type="number" max="99" min="0" value="0" class="time"><p id="p1" class="semicolon">:</p><input id="minute" type="number" max="60" min="0" value="0" class="time"><p id="p2" class="semicolon">:</p><input id="sec" type="number" max="60" min="0" value="0" class="time">
-            <button id="start" class="btn">Start</button>
-            <button id="reset" class="btn">Reset</button>
+            <input id="hourcd" type="number" max="99" min="0" value="0" class="time"><p id="p1" class="semicolon">:</p><input id="minutecd" type="number" max="60" min="0" value="0" class="time"><p id="p2" class="semicolon">:</p><input id="seccd" type="number" max="60" min="0" value="0" class="time">
+            <button id="start" class="btn" onclick="sttim()">Start</button>
+            <button id="reset" class="btn" onclick="resetim()">Reset</button>
         </div>
     </div>
-        <script src="scripts/cd.js"></script>
         
-    </section>
-    <section class="background" id="sw">
-        <h1 class="text-center">Stopwatch</h1>
+    
        
-        <div id="stopwatch" class="box-main ">
+    </section>
+    <script src="scripts/cd.js"></script> 
+    <section class="firstHalf background" id="sw">
+        <h1 class="text-center"><p>Stopwatch</p></h1>
+       
+        <div id="stopwatch" class="firstSection box-main ">
             00:00:00
         </div>
-        <script src="scripts/sw.js"></script>
+        
 
-        <div class="button box-main ">
+        <div class="box-main ">
             <p>
-            <button class="button"  onclick="startTimer()">Start</button>
+            <button class="button btn" id="sws" onclick="startTimerr();">Start</button>
             
-            <button class="button" onclick="stopTimer()">Stop</button>
-            <button class="button" onclick="resetTimer()">Reset</button>
+            <button class="button btn" id="swt" onclick="stopTimer();">Stop</button>
+            <button class="button btn" id="swr" onclick="resetTimer();">Reset</button>
         </p>
         </div>
        
         
     </section>
      
+    <script src="scripts/sw.js"></script>
+    
     <section class="background" id="cl">
         <h1 class="text-center">Quote of the day</h1>
         <div class="box-main ">
@@ -91,7 +98,7 @@
             Made with ❤ by Shivam |Copyright &copy; 2021
         </p>
     </footer>
-    <script src="scripts/resp.js"></script>
+    
 
 </body>
 
