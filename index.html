@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="scripts/thecock.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/resp.css">
+    <title>Clock</title>
+</head>
+
+<body onload="theclock()">
+    <nav class="navbar background h-nav-resp">
+        <ul class="nav-list v-class-resp">
+            <div class="logo"><p class = "text-big"></p></div>
+            <li><a href="#">The Clock</a></li>
+            <li><a href="#cd" >Countdown</a></li>
+            <li><a href="#sw">Stopwatch</a></li>
+            <li><a href="#cl">The Clockoculate</a></li>
+        </ul>
+        <!-- <div class="rightNav v-class-resp">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">Search</button>
+        </div> -->
+         <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div> 
+    </nav>
+
+    <section class="background firstSection">
+        <div class="box-main" >
+            <div class="firstHalf" id="clock">
+                
+                <!-- <div class="buttons">
+                    <button class="btn">Subscribe</button>
+                    <button class="btn">Watch Video</button>
+
+                </div> -->
+            </div>
+
+            
+        </div>
+    </section>
+
+    
+
+    <section class="background" id="cd">
+        <h1 class="text-center">Countdowns</h1>
+        <div class="box-main ">
+        <div id="container">
+            <p id="hour-label" class="label">Hours</p><p id="min-label" class="label">Minutes</p><p id="sec-label" class="label">Seconds</p>
+            <input id="hour" type="number" max="99" min="0" value="0" class="time"><p id="p1" class="semicolon">:</p><input id="minute" type="number" max="60" min="0" value="0" class="time"><p id="p2" class="semicolon">:</p><input id="sec" type="number" max="60" min="0" value="0" class="time">
+            <button id="start" class="btn">Start</button>
+            <button id="reset" class="btn">Reset</button>
+        </div>
+    </div>
+        <script src="scripts/cd.js"></script>
+        
+    </section>
+    <section class="background" id="sw">
+        <h1 class="text-center">Stopwatch</h1>
+       
+        <div id="stopwatch" class="box-main ">
+            00:00:00
+        </div>
+        <script src="scripts/sw.js"></script>
+
+        <div class="button box-main ">
+            <p>
+            <button class="button"  onclick="startTimer()">Start</button>
+            
+            <button class="button" onclick="stopTimer()">Stop</button>
+            <button class="button" onclick="resetTimer()">Reset</button>
+        </p>
+        </div>
+       
+        
+    </section>
+     
+    <section class="background" id="cl">
+        <h1 class="text-center">Quote of the day</h1>
+        <div class="box-main ">
+        <div id="quote">
+            Don't forget: life is a race, if you don't run fast, you'll get trampled
+        </div>
+        
+        </div>
+        <script src="scripts/quote.js"></script>
+        
+    </section>
+
+    <footer class="background ">
+    
+        <p class="text-footer">
+            Made with ❤ by Shivam |Copyright &copy; 2021
+        </p>
+    </footer>
+    <script src="scripts/resp.js"></script>
+
+</body>
+
+</html>
