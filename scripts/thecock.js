@@ -18,7 +18,8 @@ function theclock(){
     yy = ("0" + yy).slice(-4);
     
     document.getElementById('clock').innerHTML =
-      h + "  :  " + min + "  :  " + sec + " " + ampm + "\n" +d + "/" + mm + "/" + yy;
+      //h + "  :  " + min + "  :  " + sec + " " + ampm + "\n" +d + "/" + mm + "/" + yy;
+      rtc;
       var t = setTimeout(theclock, 200);
     
 
