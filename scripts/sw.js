@@ -1,11 +1,16 @@
-const timer = document.getElementById('stopwatch');
+var timer = document.getElementById('stopwatch');
+var strt = document.getElementById('sws');
+var stp = document.getElementById('swt');
+var res = document.getElementById('swr');
+
+
 
 var hr = 0;
 var min = 0;
 var sec = 0;
 var stoptime = true;
 
-function startTimer() {
+function startTimerr() {
   if (stoptime == true) {
         stoptime = false;
         timerCycle();
@@ -58,3 +63,20 @@ function resetTimer() {
     sec = 0;
     min = 0;
 }
+
+document.addEventListener('DOMContentLoaded',function(){
+  strt.addEventListener('click',startTimerr());
+  stp.addEventListener('click',stopTimer());
+  res.addEventListener('click',resetTimer());
+});
+// document.getElementById('swt').addEventListener('DOMContentLoaded',function(){
+//   stopTimer();
+// });
+// document.getElementById('swr').addEventListener('DOMContentLoaded',function(){
+//   resetTimer();
+// });
+strt.addEventListener('click',startTimerr());
+stp.addEventListener('click',stopTimer());
+res.addEventListener('click',resetTimer());
+
+  
