@@ -1,32 +1,16 @@
 var start = document.getElementById('start');
 var reset = document.getElementById('reset');
 
-var h = document.getElementById("hour");
-var m = document.getElementById("minute");
-var s = document.getElementById("sec");
+var h = document.getElementById("hourcd");
+var m = document.getElementById("minutecd");
+var s = document.getElementById("seccd");
 
 
 var startTimer = null;
 
-start.addEventListener('click', function(){
-   
-    function startInterval(){
-        startTimer = setInterval(function() {
-            timer();
-        }, 1000);
-    }
-    startInterval();
-})
 
-reset.addEventListener('click', function(){
-    h.value = 0;
-    m.value = 0;
-    s.value = 0;
-    //stop the timer after pressing "reset"
-    stopInterval()
-})
 
-function timer(){
+function sttimer(){
     if(h.value == 0 && m.value == 0 && s.value == 0){
         h.value = 0;
         m.value = 0;
@@ -42,6 +26,28 @@ function timer(){
     }
     return;
 }
+
+
+
+start.addEventListener('click', function sttim(){
+   
+    function startInterval(){
+        startTimer = setInterval(function() {
+            sttimer();
+        }, 1000);
+    }
+    startInterval();
+})
+
+reset.addEventListener('click', function resetim(){
+    h.value = 0;
+    m.value = 0;
+    s.value = 0;
+    //stop the timer after pressing "reset"
+    stopInterval()
+})
+
+
 
 
 function stopInterval() {
