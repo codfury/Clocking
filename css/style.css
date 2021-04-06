@@ -176,7 +176,13 @@ html{
     text-align: center;
     padding-top: 30px;
    font-family: 'Ubuntu', sans-serif;
-       font-size: 35px;
+    
+    width: 100%;
+    
+    font-size: 10vw;
+    
+    text-align: center;
+    font: optional;
 }
 
 .form{
@@ -237,9 +243,11 @@ html{
     outline: none;
 }
 #stopwatch {
-    font-size: 200px;
+    font-size: 700%;
     position:inherit;
-    block-size: 200%;
+    width: 100%;
+    
+    
     background-color: purple;
 
     
@@ -250,9 +258,10 @@ li {
     padding-left: 10px;
 }
 button {
-    width: 100px;
-    height: 30px;
-    border: 3px soldi white;
+    width: 200px;
+    height: 50px;
+    border: px soldi white;
+    bottom: 50px;
     border-radius: 50px;
     background: #202020;
     color: white;
@@ -264,15 +273,15 @@ button {
     background-color: purple ;
 }
 #cd{
-    background-color: #3f6b3b;
+    background-color: #0c4407;
     size: 400%;
 }
 #container {
-    height: 300%;
-    width: 300%;
-    background-color: #3f6b3b;
     
-    size: 200%;
+    width: 100%;
+    background-color: #0c4407;
+    
+    
 
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -281,10 +290,11 @@ button {
 
 /*label*/
 .label {
-    margin: 0;
-
+    margin: 50px;
+    width: 100%;
     justify-self: center;
     align-self: center;
+    margin-top: 100px;
     font-size: 30px;
 }
 
@@ -306,13 +316,16 @@ button {
     align-self: center;
 
     border: none;
-    background-color: #ffffff00;
-    font-size: 50px;
-    width: 70px;
-    height: 50px;
+    background-color: #0c4407;
+    font-size: 80px;
+    font-display:inherit ;
+
+    
+    width: 55%;
+    height: 50%;
 }
 
-#hour {
+#hourcd {
     grid-area: 2 / 2 / 2 / 3;
 }
 
@@ -320,14 +333,14 @@ button {
     justify-self: center;
     align-self: center;
 
-    font-size: 30px;
+    font-size: 50px;
     margin: 0;
 }
 #p1 {
     grid-area: 2 / 2 / 2 / 4;
 }
 
-#minute {
+#minutecd {
     grid-area: 2 / 3 / 2 / 4;
 }
 
@@ -335,7 +348,7 @@ button {
     grid-area: 2 / 3 / 2 / 5;
 }
 
-#sec {
+#seccd {
     grid-area: 2 / 4 / 2 / 5;
 }
 
@@ -369,6 +382,8 @@ button {
     font-size: 40px; 
     font-weight: bold;
     color: rgb(115, 8, 255);
+    padding-top: 40px;
+    padding-bottom: 10px;
    }
    .author {
     font-display:unset ;
