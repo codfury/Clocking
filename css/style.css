@@ -385,11 +385,12 @@ button {
     margin-top: 150px;
    }
    #quote { 
-    font-size: 40px; 
+    font-size: 70px; 
     font-weight: bold;
     color: rgb(115, 8, 255);
     padding-top: 40px;
     padding-bottom: 10px;
+    font-family: 'Dancing Script', cursive;
    }
    .author {
     font-display:unset ;
