@@ -374,6 +374,13 @@ button {
     
     justify-self: center;
 }
+.btn:hover{
+    background-color: rgb(124, 224, 24);
+    width: 150 ;
+    height: auto;
+    border: lime;
+    border-style: dotted;
+}
 
 #start {
     grid-area: 3 / 2 / 3 / 4;
