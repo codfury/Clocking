@@ -306,14 +306,17 @@ button {
 
 #hour-label {
     grid-area: 1 / 2 / 1 / 3;
+    grid-row: inherit;
 }
 
 #min-label {
     grid-area: 1 / 3 / 1 / 4;
+    grid-row: inherit;
 }
 
 #sec-label {
     grid-area: 1 / 4 / 1 / 5;
+    grid-row: inherit;
 }
 
 /*times*/
@@ -333,6 +336,7 @@ button {
 
 #hourcd {
     grid-area: 2 / 2 / 2 / 3;
+    
 }
 
 .semicolon {
