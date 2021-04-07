@@ -19,18 +19,7 @@ html{
     border-radius: 50px;
     margin: 5px;
 }
-.a:hover{
 
-
-   background-color: rgb(119, 10, 221);
-   background: blueviolet;
-   text-emphasis-color:inherit;
-    
-
-}
-.a:visited{
-    color: chartreuse;
-}
 
 .navbar{
     display: flex;
