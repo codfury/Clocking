@@ -28,6 +28,7 @@ html{
     position: sticky;
     top:0;
     cursor: pointer;
+    background-color:midnightblue ;
     
 }
 .navbar:hover{
