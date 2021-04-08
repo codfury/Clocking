@@ -31,7 +31,7 @@ html{
     
 }
 .navbar:hover{
-    background-color: rgb(4, 172, 238);
+    background-color: rgb(0, 110, 255);
 }
 
 
@@ -66,13 +66,13 @@ html{
 
 .background{
     
-    background: rgba(10, 114, 233, 0.7) url(Clocking\media\clocko.jpg);
+    background: rgb(19, 12, 126);
     background-size: cover;
-    background-blend-mode: lighten;
+    
 }
 
 .firstSection{
-    background-image: url(media/clocko.jpeg);
+   
     height: 100vh;
     size: 100%;
     background-size: cover ;
@@ -232,7 +232,8 @@ html{
     width: 100%;
     position: absolute;
     font-size: 10vw;
-    color: white;
+    
+    color: rgb(233, 233, 233);
     text-align: center;
     font: optional;
     
